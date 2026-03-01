@@ -1,0 +1,8 @@
+{
+    "toolbar.btn.new": "//div[@id='toolbar']//a[contains(.,'New') or @iconCls='icon-add']",
+    "toolbar.btn.destroy": "//div[@id='toolbar']//a[contains(.,'Destroy') or @iconCls='icon-remove']",
+    "btn.save1": "//a[contains(@onclick,'save1')]",
+    "btn.save": "//a[contains(normalize-space(.),'Save') and contains(@class,'easyui-linkbutton')]",
+    "btn.save.complex": "//a[contains(@onclick,'save1')] | //a[contains(@onclick,'Save')] | //input[@value='Save' or @value='save'] | //button[normalize-space(.)='Save'] | //a[normalize-space(.)='Save']",
+    "messager.btn.ok": "//div[contains(@class,'messager-button')]//a[.//span[text()='OK']]"
+}
