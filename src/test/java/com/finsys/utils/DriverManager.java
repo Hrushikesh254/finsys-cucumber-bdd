@@ -33,7 +33,8 @@ public class DriverManager {
                 break;
             case "chrome":
             default:
-                WebDriverManager.chromedriver().setup();
+                // Force WebDriverManager to specifically use the driver for Chrome 145
+                WebDriverManager.chromedriver().browserVersion("145").setup();
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--start-maximized");
                 chromeOptions.addArguments("--disable-notifications");
@@ -60,7 +61,10 @@ public class DriverManager {
         }
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigReader.getImplicitWait()));
-        driver.manage().window().maximize();
+        // Remove explicit maximize() here, as ChromeOptions --start-maximized handles
+        // it
+        // and window().maximize() can cause TimeoutExceptions in Chrome 145+
+        // driver.manage().window().maximize();
         driverThreadLocal.set(driver);
     }
 
