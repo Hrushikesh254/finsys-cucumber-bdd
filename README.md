@@ -1,7 +1,11 @@
 # FinSys BDD Automation Framework
 
 ## 📝 Description
+I worked on a Test Automation Framework for a financial management web application called FinSys.
 FinSys is a comprehensive financial web application internally used for managing financial data, business entities, and company records. 
+The goal was to build a Cucumber BDD (Behavior Driven Development) framework from scratch using Java, Selenium WebDriver,
+and JUnit — where test cases are written in plain English so that both technical and non-technical stakeholders can
+understand them.
 
 This repository contains a robust, scalable **Test Automation Framework** built from scratch to automate the end-to-end functionality of the FinSys web application. The framework follows a **Behavior Driven Development (BDD)** approach using Cucumber and utilizes the **Page Object Model (POM)** design pattern. This ensures that UI interactions and test logic are strictly separated, promoting maximum code reusability and easier maintenance.
 
