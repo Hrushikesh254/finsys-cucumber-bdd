@@ -14,7 +14,7 @@ This repository contains a robust, scalable **Test Automation Framework** built 
 - **Core Automation Engine:** Selenium WebDriver (v4.x)
 - **BDD Framework:** Cucumber (v7.x)
 - **Design Pattern:** Page Object Model (POM)
-- **Test Runner:** TestNG
+- **Test Runner:** JUnit
 - **Build & Dependency Management:** Maven
 - **Reporting:** Extent Reports & Cucumber HTML Reports
 - **Version Control:** Git & GitHub
@@ -27,7 +27,7 @@ The project follows an industry-standard directory structure for modularity and 
 - `src/test/java/pages/`: Contains all Page Object classes encapsulating WebElements and action methods.
 - `src/test/java/steps/`: Contains Cucumber Step Definitions mapping Gherkin scenarios to Java code.
 - `src/test/java/utils/`: Contains framework utilities (`DriverManager`, `ConfigReader`, `Hooks`).
-- `src/test/java/runner/`: Contains the `TestRunner` class configured with TestNG.
+- `src/test/java/runner/`: Contains the `TestRunner` class configured with JUnit.
 - `src/test/resources/features/`: Contains all `.feature` files written in Gherkin (Given/When/Then).
 - `src/test/resources/config.properties`: Externalized configuration properties (browser type, timeouts, URLs).
 
@@ -44,7 +44,7 @@ As a QA Automation Engineer working on this framework, my core responsibilities 
 ## ▶️ Execution Instructions
 **1. Local Execution via IDE:**
 - Open `src/test/java/com/finsys/runner/TestRunner.java`.
-- Right-click the file and select `Run As -> TestNG Test`.
+- Right-click the file and select `Run As -> JUnit Test`.
 
 **2. Maven Execution via Terminal:**
 ```bash
